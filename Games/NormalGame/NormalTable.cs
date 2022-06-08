@@ -67,7 +67,7 @@ class NormalTable : ITable
         if(board.Count()==0)return true;
         return key.GetAllFaces().Any((elem)=>right.Equals(elem)||left.Equals(elem));
     }
-
+    //push
     public IEnumerable<IFace> CurrentFaces()
     {
          return new IFace[]{right,left};
